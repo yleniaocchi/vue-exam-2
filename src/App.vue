@@ -335,6 +335,8 @@ p {
 	background-image: url(backgroundphone.jpg);
 	background-size: cover;
 	color: #FFF;
+	height: 100vh;
+	overflow: hidden;
     }
 
     h1 {
@@ -362,7 +364,7 @@ p {
     .result-image {
         max-width: 200px;
         max-height: 150px;
-        margin-left: 0;
+        margin-left: 100px;
     }
 }
 
