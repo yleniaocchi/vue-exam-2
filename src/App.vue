@@ -340,7 +340,7 @@ p {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     h2 {
@@ -348,11 +348,11 @@ p {
     }
 
     p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .option {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         padding: 0.8rem;
     }
 
@@ -363,7 +363,8 @@ p {
 
     .result-image {
         max-width: 50%;
-        max-height: 50%px;
+        max-height: 50%;
+		margin-left: 50px;
     }
 }
 
