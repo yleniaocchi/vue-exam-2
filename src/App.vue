@@ -310,4 +310,60 @@ p {
 }
 
 
+@media (max-width: 768px) {
+    .app {
+        padding: 1rem;
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .quiz {
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+
+    .quiz-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+	body {
+	background-image: url(backgroundphone.jpg);
+	background-size: cover;
+	color: #FFF;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .option {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .result-image {
+        max-width: 200px;
+        max-height: 150px;
+        margin-left: 0;
+    }
+}
+
 </style>
