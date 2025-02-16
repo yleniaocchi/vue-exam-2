@@ -322,7 +322,7 @@ p {
         width: 100%;
         min-width: auto;
         max-width: 100%;
-        padding: 0.5rem;
+        padding: 0.8rem;
     }
 
     .quiz-info {
@@ -340,7 +340,7 @@ p {
     }
 
     h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     h2 {
@@ -364,7 +364,7 @@ p {
     .result-image {
         max-width: 50%;
         max-height: 50%;
-		margin-left: 100px;
+		margin-left: 80px;
     }
 }
 
