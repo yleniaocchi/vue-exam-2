@@ -1,3 +1,5 @@
+
+"homepage": "https://yleniaocchi.github.io/vue-exam-2/"
 {
   "name": "vue-exam",
   "version": "0.0.0",
@@ -9,7 +11,6 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://yleniaocchi.github.io/vue-exam-2/"
 
   },
   "dependencies": {
