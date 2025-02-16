@@ -2,70 +2,70 @@
 import { ref, computed } from 'vue'
 
 import img1 from './assets/img1.png'
-import img2 from './assets/img2.png'
-import img3 from './assets/img3.png'
+import img2 from './assets/img2.jpg'
+import img3 from './assets/img3.jpg'
 
 const questions = ref([
 	{
-		question: 'In quale film i vendicatori si uniscono per la prima volta?',
+		question: 'Qual è il colore della scuderia Ferrari?',
 		answer: 0,
 		options: [
-			'The Avengers',
-			'Thor: Ragnarok',
-			'Avengers: Age of Ultron'
+			'Rosso',
+			'Giallo',
+			'Blu'
 		],
 		selected: null
 	},
 	{
-		question: 'Quale gemma è nascosta a Vormir?',
+		question: 'Quale pilota ha vinto il suo primo campionato nel 2010?',
 		answer: 2,
 		options: [
-			'Tempo',
-			'Spazio',
-			'Anima'
+			'Lewis Hamilton',
+			'Felipe Massa',
+			'Sebastian Vettel'
 		],
 		selected: null
 	},
 	{
-		question: 'Quale personaggio interpreta il soldato invernale?',
+		question: 'Qual è stata la prima squadra di Michael Schumacher in F1?',
 		answer: 1,
 		options: [
-			'Clint Barton',
-			'Bucky Barnes',
-			'Sam Wilson'
+			'Benetton',
+			'Jordan',
+			'Ferrari'
 		],
 		selected: null
 	},
 
 	{
-		question: 'Quale Avenger è in grado di sollevare Mjolnir oltre a Thor?',
+		question: 'Quale scuderia ha vinto il primo campionato nel 1950?',
 		answer: 1,
 		options: [
-			'Capitan America',
-			'Visione',
-			'Hulk'
+			'Ferrari',
+			'Alfa Romeo',
+			'Williams'
 		],
 		selected: null
 	},
 
 	{
-		question: 'In "Guardiani della galassia" cosa cerca Ronan?',
+		question: 'In che anno la Ferrari ha vinto il campionato costruttori per l ultima volta?',
 		answer: 2,
 		options: [
-			'Tesseract',
-			'Occhio di Agamotto',
-			'Orb'
+			'2006',
+			'2007',
+			'2008'
 		],
 		selected: null
 	},
 
 	{
-		question: 'Chi è il villain principale in Spider-Man: Homecoming?',
+		question: 'Quale team ha portato Max Verstappen al debutto in F1?',
 		answer: 0,
 		options: [
-			'Vulture',
-			'Mysterio',
-			'Green Goblin'
+			'Toro Rosso',
+			'Redbull',
+			'Mclaren'
 		],
 		selected: null
 	}
@@ -114,11 +114,14 @@ const NextQuestion = () => {
 
 	quizCompleted.value = true
 }
+
+
+
 </script>
 
 <template>
 	<main class="app">
-		<h1> MARVEL QUIZ</h1>
+		<h1> FORMULA 1 QUIZ</h1>
 
 		<section class="quiz" v-if="!quizCompleted">
 			<div class="quiz-info">
@@ -159,10 +162,10 @@ const NextQuestion = () => {
 			<h2>Hai finito il quiz!</h2>
 			<img :src="resultImage" alt="Risultato del quiz" class="result-image" />
 
-			<p v-if="score == 1">Non sai niente!</p>
-			<p v-else-if="score < questions.length / 2">Potevi fare di meglio!</p>
-			<p v-else-if="score < questions.length">Buon lavoro!</p>
-			<p v-else>Sei un vero esperto Marvel!</p>
+			<p v-if="score == 1"> GOATIFI: non sai nulla!</p>
+			<p v-else-if="score < questions.length / 2">Potevi fare di meglio! Copy that!</p>
+			<p v-else-if="score < questions.length">Good job! Copy!</p>
+			<p v-else> Il predestinato vince il gran premio d'Italia!</p>
 
 			<p>Il tuo punteggio è {{ score }}/{{ questions.length }}</p>
 		</section>
@@ -178,7 +181,7 @@ const NextQuestion = () => {
 }
 
 body {
-	background-image: url(BACKGORUND.jpg);
+	background-image: url(BACKGROUND.jpg);
 	background-size: cover;
 	color: #FFF;
 }
@@ -292,7 +295,7 @@ h2 {
 }
 
 p {
-	color: #8F8F8F;
+	color: #b3b3b3;
 	font-size: 1.5rem;
 	text-align: center;
 }
@@ -300,8 +303,11 @@ p {
 .result-image {
 	z-index: 999999;
 	max-width: 300px;
-	height: auto;
+	max-height: 200px;
 	margin-bottom: 1rem;
-	align-items: center;
+	margin-left: 30px;
+	align-items: center center;
 }
+
+
 </style>
