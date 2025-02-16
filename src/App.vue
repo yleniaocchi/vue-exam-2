@@ -364,7 +364,7 @@ p {
     .result-image {
         max-width: 200px;
         max-height: 150px;
-        margin-left: 100px;
+        margin-left: 70px;
     }
 }
 
