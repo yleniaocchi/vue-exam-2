@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://yleniaocchi.github.io/vue-exam-2/"
+
   },
   "dependencies": {
     "vue": "^3.4.21"
