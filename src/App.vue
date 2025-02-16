@@ -340,7 +340,7 @@ p {
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     h2 {
@@ -364,7 +364,7 @@ p {
     .result-image {
         max-width: 50%;
         max-height: 50%;
-		margin-left: 50px;
+		margin-left: 100px;
     }
 }
 
